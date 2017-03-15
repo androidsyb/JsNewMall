@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ln_item_layout_bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_sixth_content_shape_c"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_item_date_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="10sp"
+            android:text="2/6"/>
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_routedate_money_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_orange"
+                android:textSize="12sp"
+                android:text="@string/search_h"/>
+            <TextView
+                android:id="@+id/tv_routedate_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/title_orange"
+                android:text="1000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/pay_titlebar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <!--全部-->
+        <RelativeLayout
+            android:id="@+id/rl_order_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:id="@+id/order_content_a"
+                android:textColor="@color/dark_3"
+                android:text="全部"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <!--待审核-->
+        <RelativeLayout
+            android:id="@+id/rl_travel_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/order_content_b"
+                android:textColor="@color/dark_3"
+                android:text="待审核"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <!--待付款-->
+        <RelativeLayout
+            android:id="@+id/rl_travel_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/order_content_c"
+                android:textColor="@color/dark_3"
+                android:text="待付款"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <!--待出游-->
+        <RelativeLayout
+            android:id="@+id/rl_travel_d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:id="@+id/order_content_d"
+                android:textColor="@color/dark_3"
+                android:text="待出游"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/cursoraa"
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:background="@color/title_orange"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/second_bgcolor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+</LinearLayout>

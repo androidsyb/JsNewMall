@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:id="@+id/center_all"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_quanbu"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:textSize="12sp"
+            android:textColor="@color/dark_9"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/center_shenghe"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_daishenghe"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待审核"
+            android:textSize="12sp"
+            android:textColor="@color/dark_9"/>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/center_fukuan"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_daifukuan"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待付款"
+            android:textSize="12sp"
+            android:textColor="@color/dark_9"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/center_chuyou"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_daichuyou"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待出游"
+            android:textSize="12sp"
+            android:textColor="@color/dark_9"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

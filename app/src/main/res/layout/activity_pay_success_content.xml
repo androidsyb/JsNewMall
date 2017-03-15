@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/pay_titlebar"/>
+    <include layout="@layout/activity_pay_first_view"></include>
+
+    <include layout="@layout/activity_pay_success_button_content"></include>
+
+
+</LinearLayout>

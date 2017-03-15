@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_img_a"
+               android:layout_alignParentLeft="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_route_a"/>
+           <include layout="@layout/item_item_first_day_view"/>
+        </LinearLayout>
+        <!--第一条虚线和右边内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <com.example.host.jsnewmall.view.DashedLineView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                app:lineColor="@color/xuxian"
+                app:dashOrientation="1"
+                app:dashWidth="2dp"
+                app:lineHeight="2dp"
+                app:lineWidth="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/tv_item_first_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="好的好"
+                android:textSize="10sp"
+                android:textColor="@color/dark_6"/>
+             <ListView
+                 android:layout_marginTop="5dp"
+                 android:id="@+id/itme_item_item_listview_route"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:dividerHeight="8dp"
+                 android:scrollbars="none"
+                 android:divider="@null">
+
+             </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--三餐-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_img_b"
+                android:layout_alignParentLeft="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_route_b"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三餐"
+                android:textColor="@color/dark_3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+
+        <!--第二条虚线和右边内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <com.example.host.jsnewmall.view.DashedLineView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                app:lineColor="@color/xuxian"
+                app:dashOrientation="1"
+                app:dashWidth="2dp"
+                app:lineHeight="2dp"
+                app:lineWidth="2dp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="8dp">
+               <include layout="@layout/item_item_three_lunch_view"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--住宿-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_img_c"
+                android:layout_alignParentLeft="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_route_c"/>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住宿"
+                android:textColor="@color/dark_3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+        <!--第三条虚线和右边内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <com.example.host.jsnewmall.view.DashedLineView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                app:lineColor="@color/xuxian"
+                app:dashOrientation="1"
+                app:dashWidth="2dp"
+                app:lineHeight="2dp"
+                app:lineWidth="2dp" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="8dp">
+               <TextView
+                   android:id="@+id/tv_zhusu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="10sp"
+                   android:textColor="@color/dark_6"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

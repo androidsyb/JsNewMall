@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="3dp">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center">
+        <TextView
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_3"
+            android:textSize="12sp"
+            android:text="第"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_item_date_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_3"
+            android:textSize="12sp"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_3"
+            android:textSize="12sp"
+            android:text="天"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_3"
+            android:textSize="12sp"
+            android:text="|"/>
+        <TextView
+            android:id="@+id/tv_item_title_route_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_3"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:text="名古屋-大阪-京都"/>
+    </LinearLayout>
+
+</LinearLayout>

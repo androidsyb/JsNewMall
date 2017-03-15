@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/title_orange"
+    tools:context="com.example.host.jsnewmall.activity.MainActivity">
+
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.host.jsnewmall.fragment.HomeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main" />
+
+    <fragment
+        android:id="@+id/donation"
+        android:name="com.example.host.jsnewmall.fragment.AddressFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main" />
+
+    <fragment
+        android:id="@+id/offered"
+        android:name="com.example.host.jsnewmall.fragment.CustomerFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main" />
+
+    <fragment
+        android:id="@+id/center"
+        android:name="com.example.host.jsnewmall.fragment.CenterFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main" />
+
+
+
+
+<!-- <RadioButton
+                android:id="@+id/rbtn_activity_main_home_page"
+                style="@style/tab_rb_style"
+                android:checked="true"
+                android:layout_height="50dp"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:text="首页" />-->
+
+
+    <LinearLayout
+        android:alpha="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundcolor"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+
+            android:id="@+id/rg_activity_main_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_activity_main_home_page"
+                style="@style/tab_rb_style"
+                android:checked="true"
+                android:drawableTop="@drawable/main_bottom_home_selector"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/rbtn_activity_main_address"
+                style="@style/tab_rb_style"
+                android:drawableTop="@drawable/main_bottom_address_selector"
+                android:text="地址" />
+
+            <RadioButton
+                android:id="@+id/rbtn_activity_main_customer"
+                style="@style/tab_rb_style"
+                android:drawableTop="@drawable/main_bottom_customer_selector"
+                android:text="客服" />
+
+            <RadioButton
+                android:id="@+id/rbtn_activity_main_mine"
+                style="@style/tab_rb_style"
+                android:drawableTop="@drawable/main_bottom_mine_selector"
+                android:text="我的" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

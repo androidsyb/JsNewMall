@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <com.example.host.jsnewmall.view.XRoundNetImageView
+            android:id="@+id/img_network_a"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingTop="2dp"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:alpha="0.8"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tv_week_forth_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp"
+    android:background="@color/white">
+    
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:id="@+id/ln_search_a"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/activity_search_shape">
+        <ImageView
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_search"/>
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:background="@null"
+        android:imeOptions="actionSearch"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_search_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_orange"
+            android:textSize="16sp"
+            android:text="@string/search_a"/>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

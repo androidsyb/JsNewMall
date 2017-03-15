@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+     <include layout="@layout/fragment_dingz_titlebar"></include>
+    </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                 <ListView
+                        android:id="@+id/lv_route_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:divider="@null">
+
+                </ListView>
+
+            <LinearLayout
+                android:id="@+id/ln_route_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/activity_route_details_second_viewpager_title"></include>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_bottom_view"></include >
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

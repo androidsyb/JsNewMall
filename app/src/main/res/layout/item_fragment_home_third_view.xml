@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_third_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_third_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_3"
+        android:textSize="12sp" />
+
+</LinearLayout>

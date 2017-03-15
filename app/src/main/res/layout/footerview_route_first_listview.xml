@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="15dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定制游"
+            android:textColor="@color/dark_3"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/dark_6"
+            android:text="想要行程更灵活？独立成团欢乐旅行， 我们根据您的需求帮你定制线路。"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/route_dingzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/route_btn_shap"
+            android:text="立即定制"
+            android:textColor="@color/title_orange"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <!--日期-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/travel_week_first_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_travel_week_a"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_week_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="@string/travel_content_i"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <GridView
+                android:id="@+id/gv_travel_week_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:numColumns="3"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp">
+
+            </GridView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--玩法-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/travel_week_forth_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_travel_week_a"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="@string/travel_content_j"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <GridView
+                android:id="@+id/gv_travel_week_b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:numColumns="3"
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp">
+
+            </GridView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!--出行方式-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/travel_week_seventh_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="2dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_travel_week_a"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="@string/travel_content_k"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:background="@drawable/travel_week_eigth_shape"
+            android:orientation="horizontal">
+            <GridView
+                android:id="@+id/gv_travel_week_c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:numColumns="4">
+
+            </GridView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

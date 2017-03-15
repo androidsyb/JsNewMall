@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:padding="15dp"
+    android:layout_marginBottom="15dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/travel_content_f"
+            android:textSize="16sp"
+            android:textColor="@color/dark_3"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/travel_content_g"
+            android:textSize="12sp"
+            android:textColor="@color/dark_9"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_select_travel_route"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/travel_button_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_3"
+            android:textSize="16sp"
+            android:text="@string/travel_content_h"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="15dp">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/circle_shape">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_dingzhi_a"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="12sp"
+            android:text="@string/travel_content_n"/>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_dingzhi_jiantou"/>
+    </LinearLayout>
+
+    <!--2-->
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/circle_shape">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_dingzhi_b"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="12sp"
+            android:text="@string/travel_content_o"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_dingzhi_jiantou"/>
+    </LinearLayout>
+
+
+    <!--3-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/circle_shape">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_dingzhi_c"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="12sp"
+            android:text="@string/travel_content_q"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_dingzhi_jiantou"/>
+    </LinearLayout>
+
+
+    <!--4-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/circle_shape">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_dingzhi_d"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="12sp"
+            android:text="@string/travel_content_p"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

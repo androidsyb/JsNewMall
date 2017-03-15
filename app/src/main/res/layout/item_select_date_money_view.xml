@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/tv_select_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_centerInParent="true"
+            android:text="成人"
+            android:textSize="14sp"
+            android:textColor="@color/dark_6"/>
+
+        <TextView
+            android:id="@+id/tv_select_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="600"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_select_person"
+            android:textColor="@color/title_orange"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/btn_select_jian"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="-"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/select_btn_date_money_a"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/et_date_money"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="0"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="@color/dark_6"
+                android:background="@null"/>
+            <TextView
+                android:id="@+id/btn_select_jia"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="+"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/select_btn_date_money_b"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

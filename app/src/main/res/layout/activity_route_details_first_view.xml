@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/transparent"
+            android:visibility="gone">
+            <FrameLayout
+                android:id="@+id/fl_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/xml_oval_half_transparent_bg"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/backicon_a"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_action_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp">
+
+                <View
+                    android:id="@+id/view_action_more_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/xml_oval_half_transparent_bg"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_search_more"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/route_details_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"/>
+        <LinearLayout
+            android:id="@+id/ad_black"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="-30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_route_details_title_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/dark_6"
+                android:text="@string/route_details_a"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_route_a"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_h"
+                android:textColor="@color/title_orange"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_route_content_c"
+                android:layout_toRightOf="@id/tv_route_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="600"
+                android:textSize="16sp"
+                android:textColor="@color/title_orange"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/tv_route_content_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_i"
+                android:textColor="@color/title_orange"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_route_content_b"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="600"
+                android:textSize="10sp"
+                android:textColor="@color/dark_6"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

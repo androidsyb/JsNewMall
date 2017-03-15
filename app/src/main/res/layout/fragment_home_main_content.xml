@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_main_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+    <include layout="@layout/fragment_home_titlebar"></include>
+
+    <com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+
+    <com.example.host.jsnewmall.view.RefreshScrollView.PullableScrollView
+        android:id="@+id/home_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_home"
+                android:layout_width="match_parent"
+                android:layout_height="85dp">
+
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:id="@+id/ad_black"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="-30dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+
+            <include layout="@layout/fragment_home_second_content"></include>
+            <include layout="@layout/fragment_home_third_content"></include>
+            <include layout="@layout/fragment_home_forth_content"></include>
+            <include layout="@layout/fragment_home_fifth_content"></include>
+            <include layout="@layout/fragment_home_sixth_content"></include>
+
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </com.example.host.jsnewmall.view.RefreshScrollView.PullableScrollView>
+
+
+        <include layout="@layout/load_more" />
+
+    </com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout>
+
+</LinearLayout>

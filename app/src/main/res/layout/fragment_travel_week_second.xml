@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--热卖推荐-->
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/travel_content_c"
+            android:textSize="16sp"
+            android:textColor="@color/dark_3"/>
+    </LinearLayout>
+    <!--图片部分-->
+    <GridView
+        android:id="@+id/gv_travel_week_d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:numColumns="4"
+        android:horizontalSpacing="5dp">
+    </GridView>
+
+<!--    &lt;!&ndash;文字部分&ndash;&gt;
+    <GridView
+        android:layout_marginTop="8dp"
+        android:id="@+id/gv_travel_week_e"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:numColumns="4"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="2dp">
+    </GridView>-->
+
+
+
+</LinearLayout>

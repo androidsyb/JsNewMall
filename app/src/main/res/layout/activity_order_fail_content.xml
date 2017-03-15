@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/second_bgcolor">
+
+    <include layout="@layout/pay_titlebar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <include layout="@layout/activity_pay_first_view"></include>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/tv_order_content_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/dark_6"
+
+            android:text="【直】普陀山祈福两日游（入住普陀山）----每周二、 周四、周六发团"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_content_g"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_order_date"
+                android:textSize="12sp"
+                android:textColor="@color/title_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30"/>
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_content_h"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_order_person_a"
+                    android:textSize="12sp"
+                    android:textColor="@color/title_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_order_person_b"
+                    android:textSize="12sp"
+                    android:textColor="@color/title_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_content_i"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tv_order_money"
+                    android:textSize="12sp"
+                    android:textColor="@color/title_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.30"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_content_j"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_order_name"
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_content_k"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_order_phone"
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_content_l"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_order_email"
+                android:textSize="12sp"
+                android:textColor="@color/dark_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.30"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <include layout="@layout/activity_pay_success_button_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

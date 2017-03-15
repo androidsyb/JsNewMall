@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="title_orange">#FD7708</color>
+    <color name="title_search_shape">#E6E6E6</color>
+    <color name="title_search_shape_a">#999999</color>
+    <color name="item_chengse">#FDCE01</color>
+    <color name="dark_3">#333333</color>
+    <color name="dark_6">#666666</color>
+    <color name="dark_9">#B9B9B9</color>
+    <color name="dividing_line">#E6E6E6</color>
+    <color name="backgroundcolor">#E6E6E6</color>
+    <color name="home_button_a">#A8A8A8</color>
+    <color name="bg_main">#EAEAEA</color>
+    <color name="travel_title_bar">#F7F7F8</color>
+    <color name="travel_route_a">#999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="title_select_button">#EA6417</color>
+    <color name="travel_grid_second_select">#3D98FF</color>
+    <color name="travel_grid_third_select">#4FC72F</color>
+    <color name="blue_dan">#F0F8FF</color>
+    <color name="black">#000000</color>
+    <color name="half_transparent">#8f000000</color>
+    <color name="pay_success">#00CC66</color>
+    <color name="second_title_color">#F8F8F8</color>
+    <color name="second_bgcolor">#EEEEEE</color>
+
+    <color name="xuxian">#23CB76</color>
+    <color name="write_order_dismoney">#66CC66</color>
+</resources>

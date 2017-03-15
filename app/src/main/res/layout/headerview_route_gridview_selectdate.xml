@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/route_tuanqi_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparent">
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundcolor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+
+            <TextView
+                android:id="@+id/tv_date_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发日期"
+                android:textColor="@color/dark_6"
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以下价格均为起价"
+                android:textSize="10sp"
+                android:textColor="@color/dark_9"
+                android:layout_toRightOf="@id/tv_date_a"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_9"
+                android:textSize="10sp"
+                android:text="更多团期 >"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <GridView
+                android:id="@+id/gv_route_date_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="4"
+                android:scrollbars="none">
+
+            </GridView>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

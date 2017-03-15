@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="15dp">
+<FrameLayout
+    android:layout_width="110dp"
+    android:layout_height="110dp">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/netimg_result"
+        android:layout_width="110dp"
+        android:layout_height="110dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_item_result_a"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@color/black">
+        <TextView
+            android:id="@+id/tv_item_result_b"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:id="@+id/ln_result_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_result_content_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sh你好"
+                android:textColor="@color/dark_3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_result_b"
+            android:layout_below="@id/ln_result_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/home_button_a"
+                android:textSize="10sp"
+                android:padding="5dp"
+                android:text="亲子"
+                android:background="@drawable/home_sixth_content_shape_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/home_button_a"
+                android:textSize="10sp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="玩家"
+                android:background="@drawable/home_sixth_content_shape_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ln_result_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_g"
+                android:textColor="@color/dark_3"
+                android:textSize="10sp"/>
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/tv_result_content_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_3"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_biaozhi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_h"
+                android:textColor="@color/title_orange"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_result_content_c"
+                android:layout_toRightOf="@id/tv_biaozhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="600"
+                android:textSize="16sp"
+                android:textColor="@color/title_orange"/>
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/tv_result_content_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_i"
+                android:textColor="@color/title_orange"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_result_content_d"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="600"
+                android:textSize="10sp"
+                android:textColor="@color/dark_9"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

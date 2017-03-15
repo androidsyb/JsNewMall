@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="left">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="活动名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_9"/>
+        <TextView
+            android:id="@+id/tv_activity_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <com.example.host.jsnewmall.view.DashedLineView
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_height="1dp"
+        app:lineColor="@color/dark_9"
+        app:lineWidth="4dp"
+        app:lineHeight="1dp"
+        app:dashOrientation="0"
+        app:dashWidth="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="活动时间"
+            android:textColor="@color/dark_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tv_activity_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_6"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <com.example.host.jsnewmall.view.DashedLineView
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_height="1dp"
+        app:lineColor="@color/dark_9"
+        app:lineWidth="4dp"
+        app:lineHeight="1dp"
+        app:dashOrientation="0"
+        app:dashWidth="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="活动内容"
+            android:textSize="14sp"
+            android:textColor="@color/dark_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_activity_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_6"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+    <ScrollView
+        android:id="@+id/srcoll_travel"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/fragment_banner"></include>
+
+            <include layout="@layout/fragment_travel_week_first"></include>
+            <include layout="@layout/fragment_travel_week_second"></include>
+            <include layout="@layout/fragment_travel_week_third"></include>
+            <include layout="@layout/fragment_home_sixth_content"></include>
+            <include layout="@layout/fragment_travel_footerview"></include>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

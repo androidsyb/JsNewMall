@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/fragment_dingz_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/travel_title_bar">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_ticket_a"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/ticket_b"
+                android:textColor="@color/title_orange"/>
+            <ImageView
+                android:id="@+id/img_ticket_a"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/title_orange"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/backgroundcolor"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/dark_3"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_ticket_b"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/ticket_c"/>
+            <ImageView
+                android:id="@+id/img_ticket_b"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/travel_title_bar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/backgroundcolor"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/dark_3"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_ticket_c"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/ticket_d"/>
+            <ImageView
+                android:id="@+id/img_ticket_c"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/travel_title_bar"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cursoraa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+
+</LinearLayout>

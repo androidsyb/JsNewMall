@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_title_bg_change"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/tv_home_title_address"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title_address_change"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/title_orange"
+            android:text="常州"/>
+        <ImageView
+            android:id="@+id/img_title_xia_change"
+            android:layout_marginLeft="3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_jiantou_xia"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_search_address"
+        android:layout_toRightOf="@+id/tv_home_title_address"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="205dp"
+        android:layout_height="30dp"
+        android:background="@drawable/home_title_search_shape">
+        <TextView
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_search_a"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textColor="@color/title_search_shape_a"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/img_title_message"
+        android:id="@+id/img_title_call"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/icon_title_call"/>
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_title_message"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/icon_title_message" />
+
+
+</RelativeLayout>

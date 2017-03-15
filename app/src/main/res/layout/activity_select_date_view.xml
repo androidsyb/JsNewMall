@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/second_bgcolor">
+
+    <include layout="@layout/pay_titlebar"/>
+    <ScrollView
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.dsw.calendar.views.ADCircleCalendarView
+                android:id="@+id/circleMonthView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+            <ListView
+                android:id="@+id/select_date_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+            </ListView>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundcolor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_content_j"
+                    android:textColor="@color/dark_6"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_h"
+                    android:layout_gravity="center"
+                    android:textColor="@color/title_orange"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/tv_select_all_money"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="@color/title_orange"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_btn_date_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@color/title_orange">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_date_a"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

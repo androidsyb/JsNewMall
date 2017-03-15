@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/item_coupon_a_shape"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_orange"
+                android:textSize="22sp"
+                android:text="@string/search_h"/>
+
+            <TextView
+                android:id="@+id/tv_coupon_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500元"
+                android:textSize="30sp"
+                android:textColor="@color/title_orange"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="left"
+                android:id="@+id/tv_type_name"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_6"
+                android:text="满减券"/>
+
+            <TextView
+                android:id="@+id/tv_coupon_title_a"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_9"
+                android:text="满减券"
+                android:layout_gravity="left"/>
+            <TextView
+                android:id="@+id/tv_coupon_title_b"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_9"
+                android:text="满减券"
+                android:layout_gravity="left"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
