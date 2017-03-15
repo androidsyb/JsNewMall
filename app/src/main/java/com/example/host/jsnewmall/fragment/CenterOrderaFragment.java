@@ -4,10 +4,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.host.jsnewmall.R;
 import com.example.host.jsnewmall.adapter.CenterOrderaAdapter;
 import com.example.host.jsnewmall.model.CenterOrderaEntry;
@@ -19,6 +24,7 @@ import com.example.host.jsnewmall.utils.JsonUtils;
 import com.example.host.jsnewmall.utils.SharedPreferencesUtils;
 import com.example.host.jsnewmall.utils.ToastUtils;
 import com.example.host.jsnewmall.utils.UrlUtils;
+import com.example.host.jsnewmall.utils.VolleyController;
 import com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout;
 import com.example.host.jsnewmall.view.RefreshScrollView.PullableListView;
 import com.google.gson.Gson;
@@ -38,7 +44,6 @@ import java.util.List;
 public class CenterOrderaFragment extends BaseFragment {
     private View view;
     private PullToRefreshLayout mPullLayout;
-    private static final int FINISH_CODE=100;
 
     private SimpleDateFormat mSimpleTime;
     private String nTime;
@@ -49,41 +54,7 @@ public class CenterOrderaFragment extends BaseFragment {
     private int currentpage=1;
     private CenterOrderaAdapter adaptera;
     private List<CenterOrderaEntry.OrderlistBean> mBodyListaa;
-    private boolean refreshState = false;
     private int mCurrentAction = 0; //默认0，1表示刷新，2表示加载
-
-    private Handler handler=new Handler(){
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-
-            switch (msg.what) {
-                case FINISH_CODE:
-                    List<CenterOrderaEntry.OrderlistBean> mBodyList = mOrderaInfo.getOrderlist();
-
-
-                    if (refreshState) {
-                        mBodyListaa.clear();
-                        refreshState = false;
-                    }
-                    mBodyListaa.addAll(mBodyList);
-                    if (adaptera==null) {
-                        adaptera = new CenterOrderaAdapter(getActivity(), mBodyListaa);
-                        mListview.setAdapter(adaptera);
-                    }else {
-                        adaptera.notifyDataSetChanged();
-                    }
-
-
-                    break;
-                default:
-                    break;
-
-            };
-        }
-    };
-
-
 
     @Nullable
     @Override
@@ -101,8 +72,6 @@ public class CenterOrderaFragment extends BaseFragment {
     }
 
     private void initData(){
-
-
         JSONObject jbody=null;
         try {
             jbody = new JSONObject();
@@ -127,53 +96,69 @@ public class CenterOrderaFragment extends BaseFragment {
         mPullLayout.setOnRefreshListener(new PullToRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh(final PullToRefreshLayout pullToRefreshLayout) {
-                refreshState = true;
+                mCurrentAction = 1;     //当前处于下拉刷新状态
                 currentpage = 1;
                 initData();
-                new Handler() {
-                    @Override
-                    public void handleMessage(Message msg) {
-                        // 千万别忘了告诉控件刷新完毕了哦！
-                        pullToRefreshLayout.refreshFinish(PullToRefreshLayout.SUCCEED);
-                    }
-                }.sendEmptyMessageDelayed(0, 3000);
+
             }
 
             @Override
             public void onLoadMore(final PullToRefreshLayout pullToRefreshLayout) {
+                mCurrentAction = 2; //当前处于上啦加载状态
                 currentpage++;
                 initData();
-                new Handler(){
-                    @Override
-                    public void handleMessage(Message msg) {
-                        pullToRefreshLayout.loadmoreFinish(PullToRefreshLayout.SUCCEED);
-                    }
-                }.sendEmptyMessageDelayed(0,3000);
             }
         });
     }
 
 
     protected  void dohttpOrderaInfo(String url,JSONObject  paramhash){
-        HttpUtils.dopost(url,getActivity(),paramhash, new HttpUtils.CallBack() {
-            @Override
-            public void onRequestComplete(String result) {
 
-                JsonmModel homeinfoa=gson.fromJson(result,JsonmModel.class);
-                String body= Base64Utils.getFromBase64(homeinfoa.getBody());
-                mOrderaInfo=gson.fromJson(body, CenterOrderaEntry.class);
-                handler.sendEmptyMessage(FINISH_CODE);
+        /**
+         * volley用法 json请求  参数1 请求方式  get post
+         *                      参数2 url   参数3 json串 参数4 成功响应 参数5 失败响应
+         */
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, UrlUtils.getBaseUrl() + url, paramhash,
+                new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    String body = Base64Utils.getFromBase64(response.getString("body"));
+                    mOrderaInfo=gson.fromJson(body, CenterOrderaEntry.class);
+                    refreshData();
+                    if (mCurrentAction == 1){
+                        mPullLayout.refreshFinish(PullToRefreshLayout.SUCCEED); //刷新结束
+                    }else if (mCurrentAction == 2){
+                        mPullLayout.loadmoreFinish(PullToRefreshLayout.SUCCEED);    //加载结束
+                    }
+                    mCurrentAction = 0; //重置当前状态
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                Log.d("zhaofen",response.toString());
             }
-
+        }, new Response.ErrorListener() {
             @Override
-            public void onRequestErr(String err) {
-
+            public void onErrorResponse(VolleyError error) {
+                Log.e("zhaofen",error.toString());
             }
         });
-
+        VolleyController.getInstance(getContext()).addToRequestQueue(request);
     }
 
-
+    private void refreshData(){
+        List<CenterOrderaEntry.OrderlistBean> mBodyList = mOrderaInfo.getOrderlist();
+        if (mCurrentAction == 1) {
+            mBodyListaa.clear();
+        }
+        mBodyListaa.addAll(mBodyList);
+        if (adaptera==null) {
+            adaptera = new CenterOrderaAdapter(getActivity(), mBodyListaa);
+            mListview.setAdapter(adaptera);
+        }else {
+            adaptera.notifyDataSetChanged();
+        }
+    }
 
 
 }
